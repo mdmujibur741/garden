@@ -1,0 +1,160 @@
+
+/* ====================================================== */
+/* ===============REUSABLE COMPONENT STYLE=============== */
+/* ====================================================== */
+
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+body{
+          /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+          /* font-family:cursive; */
+}
+
+.text_shadow{
+              text-shadow: 1px 1px #047327;
+              padding: 1rem 2rem;
+              text-align: center;
+}
+
+
+
+/* ====================================================== */
+/* ===================ADD GARDEN STYLE=================== */
+/* ====================================================== */
+.add_garden_section{
+                         /* background: linear-gradient(#e4e7e9,#e5e5ee); */
+                         background: #9ac6ef;
+                         min-height: 100vh;
+                         padding-bottom:3%;
+                         padding-top: 3%;
+}
+.add_garden_section textarea{
+    max-width: 100%;
+}
+/* .add_garden_section label{
+            color: #f3f3f8;
+} */
+
+.add_garden_section input,.add_garden_section textarea,.add_garden_section select{
+                      outline: #047327 solid 0.7px;
+}
+
+.add_garden_section .btn{
+                            background: #047327;
+                            color: #ffffff;
+}
+
+
+/* ====================================================== */
+/* ===========garden_profile_section STYLE=============== */
+/* ====================================================== */
+.garden_profile_section{
+                          background: linear-gradient(#d0dfeb,#b7b7cc);
+                          min-height: 100vh;
+                          padding-top: 5%;
+                          padding-bottom: 5%;
+}
+
+.garden_profile_section .border{
+            
+                    background: #f8f0d1;
+                    padding: .5%;
+                    box-shadow: 2px 7px 10px -4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 2px 7px 10px -4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 2px 7px 10px -4px rgba(0,0,0,0.75);
+                    border-radius: 1%;
+}
+
+
+
+/* ====================================================== */
+/* =============GARDEN LIST SECTION STYLE================ */
+/* ====================================================== */
+.garden_list_section{
+                        min-height: 70vh;
+                        background: linear-gradient(#d0dfeb,#b7b7cc);
+                        /* transition: 1s; */
+}
+
+.garden_list_section th{
+                         background: #047327;
+                         color:#F8F9FA ;
+}
+
+.garden_list_section td{
+                        background: #FFFFFF;
+                        /* color: #f8f9fa; */
+                       /* box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.44);
+                        -webkit-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.44);
+                        -moz-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.44);*/
+}
+.garden_list_section .table-hover tbody tr:hover td{
+                        background: #15a844;
+                       color:#F8F9FA ;
+}
+
+.garden_list_section .fa-eye{
+                        color: #183153;
+                        font-size: 1.3rem;
+}
+
+
+
+/* ====================================================== */
+/* =============NOTICE LIST SECTION STYLE================ */
+/* ====================================================== */
+.notice_list_section{
+    min-height: 70vh;
+    background: linear-gradient(#d0dfeb,#b7b7cc);
+}
+
+.table{
+            width: 90%;
+            margin: auto;
+}
+
+.notice_list_section th{
+     background: #047327;
+     color:#F8F9FA ;
+}
+
+.notice_list_section td{
+    background: #FFFFFF;
+   
+}
+.notice_list_section .table-hover tbody tr:hover td{
+    background: #0058CA;
+   color:#F8F9FA ;
+}
+
+
+
+
+/* ====================================================== */
+/* =============CONTACT LIST SECTION STYLE================ */
+/* ====================================================== */
+.contact_section{
+                      min-height: 50vh;
+                      background: #91b9d4;
+}
+
+
+.contact_section input,.contact_section textarea{
+                      outline: #047327 solid 0.7px;
+}
+.contact_section .btn{
+                        background: #047327;
+                        font-weight: bold;
+                        color: #e5e5ee;
+}
+
+.contact_title{
+                       background: #047327;
+                     
+                       border-radius: 2%;
+                       color: #e4e7e9;
+}

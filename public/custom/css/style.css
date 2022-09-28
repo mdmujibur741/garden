@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+  .title{
+                 background: #0f169c;
+                 padding-left: 8%;
+                 padding-right: 8%;
+                 color: #dedbe7;
+                 /* border-radius: 5%; */
+
+  }
+
+/* ================================================== */
+
+
+/* LOGIN PAGE STYLE */
+
+
+/* ================================================== */
+
+.login_page {
+    background: linear-gradient(140deg,#140370,#8f96ac);
+    min-height: 100vh;
+    padding: 7%;
+}
+
+.login_page input {
+    border-radius: .7rem;
+}
+
+.login_page .log_form {
+    color: #6a7e92;
+    font-size: 1.1rem;
+    background: #050c9799;     /*#112f4e;*/
+    padding: 3%;
+}
+
+.login_page .log_btn {
+    color: #f2f5f6;
+    background: #1a2cd1;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    padding: 1% 10%;
+}
+
+
+/* ================================================== */
+
+
+/* REGISTER PAGE STYLE */
+
+
+/* ================================================== */
+
+.register {
+    background: linear-gradient(140deg,#140370,#8f96ac);
+    min-height: 100vh;
+    padding: 5%;
+}
+
+.register_form {
+    background: #050c9799;
+    padding: 3%;
+}
+
+.register_form input {
+    border-radius: 0.7rem;
+}
+
+.register .register_btn {
+    color: #ffffff;
+    background: #1a2cd1;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    padding: 1% 5%;
+}
+
+.register .log_btn {
+    color: #35108b;
+    background: #d1d4da;
+    /* #0d58b9; */
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    padding: 1% 5%;
+}
+
+
+/* ========================================================== */
+
+
+/* CHANGE PASSWORD STYLE */
+
+
+/* ========================================================== */
+
+.change_password {
+    background: linear-gradient(140deg,#140370,#8f96ac);
+    min-height: 100vh;
+    padding: 7%;
+}
+
+.change_password_form {
+    padding: 3%;
+    background:#050c9799;           
+}
+
+.change_password_form input {
+    border-radius: 0.7rem;
+}
+
+.password_btn {
+    
+    background: #1a2cd1; 
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+
+/* ================================================= */
+/* RESET PASSWORD */
+/* ================================================= */
+
+.forget_password {
+    min-height: 100vh;
+    background: linear-gradient(140deg,#140370,#8f96ac);
+    padding: 7%;
+}
+
+.forget_password_form {
+    padding: 3%;
+    background: #050c9799;
+    color: #021E3A;
+}
+
+.forget_password_form input {
+    border-radius: 0.7rem;
+}
+
+.forget_password_btn {
+   background:#1a2cd1; 
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    padding: 2%;
+}
