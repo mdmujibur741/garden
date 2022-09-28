@@ -74,4 +74,18 @@ class NoticeController extends Controller
            Session::flash('success', 'নোটিস সফলভাবে আপডেট হয়েছে');
            return redirect()->route('notice.index');
       }
+
+      public function status($id)
+      {
+              $notice = notice::find($id);
+              if($notice->status == 1){
+                   $notice->status = 0;
+              }else{
+                $notice->status = 1;
+              }
+
+              $notice->save();
+              return redirect()->back();
+              
+      }
 }

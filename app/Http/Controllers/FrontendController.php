@@ -184,7 +184,7 @@ class FrontendController extends Controller
 
     public function notice()
     {
-           $notice = notice::orderBy('created_at', 'Desc')->paginate(20);
+           $notice = notice::orderBy('created_at', 'Desc')->where('status', 1)->paginate(20);
           return view('frontend.notice',compact('notice'));
     }
 

@@ -102,13 +102,12 @@ return new class extends Migration
 
 
             $table->unsignedBigInteger('union_id');
-            $table->unsignedBigInteger('leaCla_id');
+            $table->integer('leaCla_id');
             $table->unsignedBigInteger('upozela_id');
             $table->unsignedBigInteger('cat_id');
 
             $table->foreign('union_id')->references('id')->on('unions')->cascadeOnDelete();
             $table->foreign('upozela_id')->references('id')->on('upozelas')->cascadeOnDelete();
-            $table->foreign('leaCla_id')->references('id')->on('leases')->cascadeOnDelete();
             $table->foreign('cat_id')->references('id')->on('categories')->cascadeOnDelete();
 
             $table->timestamps();

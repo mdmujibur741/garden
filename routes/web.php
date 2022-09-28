@@ -35,9 +35,9 @@ Route::middleware(['admin'])->prefix('admin')->group( function(){
     Route::resource('sms',smsController::class);
     Route::resource('user',userController::class);
     Route::resource('setting', SettingController::class);
-    Route::resource('notice', NoticeController::class);
     Route::resource('contact',ContactController::class);
-
+    Route::resource('notice', NoticeController::class);
+    Route::get('notice/status/{id}',[NoticeController::class,'status'])->name('notice.status');
 
 });
 

@@ -123,7 +123,7 @@
         <b>ইজারাকৃত ভূমি দাগ:</b>{{$garden->laeSta}}
     </div>
     <div class="col-sm-12 col-md-6 col-lg-4 mb-2 border border-light shadow">
-        <b>ইজারাকৃত ভূমির শ্রেণী:</b>{{$garden->leaCla_id}}
+        <b>ইজারাকৃত ভূমির শ্রেণী:</b>{{$garden->lease->name}}
     </div>
     <div class="col-sm-12 col-md-6 col-lg-4 mb-2 border border-light shadow">
         <b>চা চাষের মোট ভূমির পরিমান (একর):</b>{{$garden->teaToLan}}

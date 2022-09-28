@@ -48,7 +48,7 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+              <i class="nav-icon fab fa-pagelines text-light"></i>
               <p>
                   বাগান
                 <i class="fas fa-angle-left right"></i>
@@ -71,32 +71,12 @@
             </ul>
           </li>
 
-          <li class="nav-item">
-            <a href="{{route('sms.index')}}" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                 মেসেজ পাঠান
-               
-              </p>
-            </a>
-          </li>
-
-
-
-          <li class="nav-item">
-            <a href="{{route('contact.index')}}" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                 মেসেজ লিস্ট
-               
-              </p>
-            </a>
-          </li>
+        
 
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+              <i class="nav-icon far fa-sticky-note text-light"></i>
               <p>
                   নোটিস
                 <i class="fas fa-angle-left right"></i>
@@ -122,7 +102,7 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+              <i class="fas fa-wave-square text-light nav-icon"></i>
               <p>
                  বাগান শ্রেনী
                 <i class="fas fa-angle-left right"></i>
@@ -148,7 +128,7 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+              <i class="fas fa-tags text-light nav-icon"></i>
               <p>
                  উপজেলা
                 <i class="fas fa-angle-left right"></i>
@@ -198,7 +178,7 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+              <i class="fas fa-paperclip nav-icon text-light"></i>
               <p>
                   লিজ ভূমি
                 <i class="fas fa-angle-left right"></i>
@@ -246,6 +226,29 @@
           
             </ul>
           </li>
+
+          <li class="nav-item">
+            <a href="{{route('sms.index')}}" class="nav-link">
+              <i class="nav-icon fas fa-th text-success"></i>
+              <p>
+                 মেসেজ পাঠান
+               
+              </p>
+            </a>
+          </li>
+
+
+
+          <li class="nav-item">
+            <a href="{{route('contact.index')}}" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                 মেসেজ লিস্ট
+               
+              </p>
+            </a>
+          </li>
+
 
           <li class="nav-item">
             <a href="{{route('setting.create')}}" class="nav-link">

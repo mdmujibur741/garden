@@ -24,6 +24,7 @@
                                         <th scope="col"> ক্রমিক </th>
                                         <th scope="col"> টাইটেল </th>
                                         <th scope="col"> নোটিস বডি </th>
+                                        <th scope="col"> একটিভ/ ডিএকটিভ </th>
                                         <th scope="col"> একশন </th>
                                        </tr>
                                    </thead>
@@ -36,6 +37,13 @@
                                         <td> {{$numto->bnNum($key+1)}} </td>
                                         <td> {{$item->title}} </td>
                                         <td> {{  Str::limit($item->description, 30) }} </td>
+                                         <td>
+                                                @if($item->status == 1)
+                                               <a href="{{route('notice.status',$item->id)}}" class="btn btn-sm btn-primary">Active</a>
+                                               @else
+                                               <a href="{{route('notice.status',$item->id)}}" class="btn btn-sm btn-danger">Deactive</a>
+                                               @endif
+                                         </td>
                                         <td class="d-flex justify-content-center"> 
                                                                                 
                                                   <a href="{{route('notice.show',$item->id)}}" class="btn btn-sm btn-info"> <i class="fas fa-eye text-light"> </a>

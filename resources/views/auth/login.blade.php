@@ -25,7 +25,7 @@
                 <div class="col-sm-12 col-md-5 log_form rounded shadow-lg">
                      <h4 class="text-center text-light text-bolder fs-3">LOGIN PAGE</h4>
                  
-
+                   @include('error.error')
                     <form action="{{route('login')}}" method="POST">
                         @csrf
                         <div class="mb-3">

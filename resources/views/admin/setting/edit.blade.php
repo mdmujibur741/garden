@@ -24,7 +24,7 @@
                                 <input type="file" name="logo" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
                                 <label class="custom-file-label" for="inputGroupFile01"> লগো ছবি আপলোড  </label>
                               </div>
-                              <img src="{{asset($setting->logo)}}" width="100px" class="float-right rounded-circle img-thumbnail" alt="" srcset="">
+                              <img src="@if($setting ==!null){{asset($setting->logo)}} @endif" width="100px" class="float-right rounded-circle img-thumbnail" alt="" srcset="">
                         </div> 
 
                      
@@ -36,7 +36,7 @@
                                 <input type="file" name="headImgOne" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
                                 <label class="custom-file-label" for="inputGroupFile01"> ১ম হেডার ছবি আপলোড  </label>
                               </div>
-                              <img src="{{asset($setting->headImgOne)}}" width="220px" height="100px" class="float-right img-thumbnail" alt="" srcset="">
+                              <img src="@if($setting ==!null){{asset($setting->headImgOne)}}@endif" width="220px" height="100px" class="float-right img-thumbnail" alt="" srcset="">
                         </div> 
 
                         <label for="">২য় হেডার ছবি</label>
@@ -46,7 +46,7 @@
                                 <input type="file" name="headImgTwo" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
                                 <label class="custom-file-label" for="inputGroupFile01"> ২য় হেডার ছবি আপলোড </label>
                               </div>
-                              <img src="{{asset($setting->headImgTwo)}}" width="220px" height="100px" class="float-right img-thumbnail" alt="" srcset="">
+                              <img src="@if($setting ==!null){{asset($setting->headImgTwo)}}@endif" width="220px" height="100px" class="float-right img-thumbnail" alt="" srcset="">
                         </div> 
 
 
@@ -57,7 +57,7 @@
                                 <input type="file" name="headImgThree" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
                                 <label class="custom-file-label" for="inputGroupFile01"> ৩য় হেডার ছবি আপলোড </label>
                               </div>
-                              <img src="{{asset($setting->headImgThree)}}" width="220px" height="100px" class="float-right img-thumbnail" alt="" srcset="">
+                              <img src="@if($setting ==!null){{asset($setting->headImgThree)}} @endif" width="220px" height="100px" class="float-right img-thumbnail" alt="" srcset="">
                         </div> 
 
 
@@ -68,7 +68,7 @@
                                 <input type="file" name="SlidImgOne" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
                                 <label class="custom-file-label" for="inputGroupFile01"> ১ম স্লাইডার ছবি আপলোড </label>
                               </div>
-                              <img src="{{asset($setting->SlidImgOne)}}" width="220px" height="100px" class="float-right img-thumbnail" alt="" srcset="">
+                              <img src="@if($setting ==!null){{asset($setting->SlidImgOne)}}@endif" width="220px" height="100px" class="float-right img-thumbnail" alt="" srcset="">
                         </div> 
 
                         <label for="">২য় স্লাইডার ছবি</label>
@@ -78,7 +78,7 @@
                                 <input type="file" name="SlidImgTwo" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
                                 <label class="custom-file-label" for="inputGroupFile01"> ২য় স্লাইডার ছবি আপলোড </label>
                               </div>
-                              <img src="{{asset($setting->SlidImgTwo)}}" width="220px" height="100px" class="float-right img-thumbnail" alt="" srcset="">
+                              <img src="@if($setting ==!null){{asset($setting->SlidImgTwo)}}@endif" width="220px" height="100px" class="float-right img-thumbnail" alt="" srcset="">
                         </div> 
 
 
@@ -91,7 +91,7 @@
                                 <input type="file" name="SlidImgThree" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
                                 <label class="custom-file-label" for="inputGroupFile01"> ৩য় স্লাইডার ছবি আপলোড </label>
                               </div>
-                              <img src="{{asset($setting->SlidImgThree)}}" width="220px" height="100px" class="float-right img-thumbnail" alt="" srcset="">
+                              <img src="@if($setting ==!null){{asset($setting->SlidImgThree)}}@endif" width="220px" height="100px" class="float-right img-thumbnail" alt="" srcset="">
                         </div> 
 
                           
