@@ -14,7 +14,7 @@
           <img src="{{asset('admin/dist/img/images.png')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block"> {{Session::get('adminName')}} </a>
         </div>
       </div>
 
@@ -36,11 +36,11 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt text-success "></i>
               <p>
                 Dashboard
-                <i class="right fas fa-angle-left"></i>
+               
               </p>
             </a>
           
@@ -48,7 +48,7 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fab fa-pagelines text-light"></i>
+              <i class="nav-icon fab fa-pagelines text-success"></i>
               <p>
                   বাগান
                 <i class="fas fa-angle-left right"></i>
@@ -76,7 +76,7 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon far fa-sticky-note text-light"></i>
+              <i class="nav-icon far fa-sticky-note text-success"></i>
               <p>
                   নোটিস
                 <i class="fas fa-angle-left right"></i>
@@ -102,7 +102,7 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="fas fa-wave-square text-light nav-icon"></i>
+              <i class="fas fa-wave-square text-success nav-icon"></i>
               <p>
                  বাগান শ্রেনী
                 <i class="fas fa-angle-left right"></i>
@@ -128,7 +128,7 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="fas fa-tags text-light nav-icon"></i>
+              <i class="fas fa-tags text-success nav-icon"></i>
               <p>
                  উপজেলা
                 <i class="fas fa-angle-left right"></i>
@@ -153,7 +153,7 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+              <i class="nav-icon fas fa-copy text-success"></i>
               <p>
                   ইউনিয়ন
                 <i class="fas fa-angle-left right"></i>
@@ -178,7 +178,7 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="fas fa-paperclip nav-icon text-light"></i>
+              <i class="fas fa-paperclip nav-icon text-success"></i>
               <p>
                   লিজ ভূমি
                 <i class="fas fa-angle-left right"></i>
@@ -204,7 +204,7 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+              <i class="nav-icon fas fa-users text-success"></i>
               <p>
                  ব‌্যাবহারকারি
                 <i class="fas fa-angle-left right"></i>
@@ -227,32 +227,38 @@
             </ul>
           </li>
 
-          <li class="nav-item">
-            <a href="{{route('sms.index')}}" class="nav-link">
-              <i class="nav-icon fas fa-th text-success"></i>
-              <p>
-                 মেসেজ পাঠান
-               
-              </p>
-            </a>
-          </li>
 
 
 
           <li class="nav-item">
-            <a href="{{route('contact.index')}}" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="#" class="nav-link">
+              <i class="fas fa-envelope-open-text text-success"></i>
               <p>
-                 মেসেজ লিস্ট
-               
+                মেসেজ
+                <i class="fas fa-angle-left right"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('contact.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>  মেসেজ লিস্ট</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('sms.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>  মেসেজ পাঠান</p>
+                </a>
+              </li>
+          
+            </ul>
           </li>
 
-
+    
           <li class="nav-item">
             <a href="{{route('setting.create')}}" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="fas fa-tools nav-icon text-success"></i>
               <p>
                 
                 সেটিং
