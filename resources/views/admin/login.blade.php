@@ -22,6 +22,8 @@
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-5 log_form rounded shadow-lg">
                      <h4 class="text-center text-light text-bolder fs-3">ADMIN LOGIN PAGE</h4> 
+                      
+                     @if(Session::get('adminError')) <h6 class="text-light bg-info p-3">{{Session::get('adminError')}}</h6> @endif
 
                     <form action="{{route('admin.login.check')}}" method="POST" enctype="multipart/form-data">
                         @csrf

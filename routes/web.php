@@ -22,6 +22,7 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
 // admin route
 Route::get('admin/login',[AdminController::class,'login'])->name('admin.login');
+Route::get('admin/logout',[AdminController::class,'logout'])->name('admin.logout');
 Route::post('admin/check',[AdminController::class,'adminCheck'])->name('admin.login.check');
 Route::get('dashboard', [dashboardController::class,'dashboard'] )->name('dashboard')->middleware('admin');
             

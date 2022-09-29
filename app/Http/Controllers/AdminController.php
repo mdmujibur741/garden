@@ -25,8 +25,16 @@ class AdminController extends Controller
                Session::put('adminName', $admin->name);
                return redirect()->route('dashboard');
            }else{
-                return   "that is not okey";
+                
+                  Session::put('adminError','Data not Match');
+                  return redirect()->back();
            }
           
+     }
+
+     public function logout()
+     {
+              Session::flush();
+              return redirect('/');
      }
 }

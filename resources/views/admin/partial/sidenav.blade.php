@@ -267,6 +267,17 @@
             </a>
           </li>
 
+          <li class="nav-item">
+            <a href="{{route('admin.logout')}}" class="nav-link">
+              <i class="fas fa-sign-out-alt text-success nav-icon"></i>
+              <p>
+                
+                লগআউট
+               
+              </p>
+            </a>
+          </li>
+
 
         </ul>
       </nav>
