@@ -36,7 +36,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link {{ (request()->is('dashboard')) ? 'active': '' }}">
               <i class="nav-icon fas fa-tachometer-alt text-success "></i>
               <p>
                 Dashboard
@@ -47,7 +47,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link {{ (request()->is('admin/garden') || request()->is('admin/garden/create')) ? 'active': '' }}">
               <i class="nav-icon fab fa-pagelines text-success"></i>
               <p>
                   বাগান
@@ -56,7 +56,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{route('garden.index')}}" class="nav-link">
+                <a href="{{route('garden.index')}}" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>  বাগান তালিকা</p>
                 </a>
@@ -75,7 +75,7 @@
 
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link {{ (request()->is('admin/notice') || request()->is('admin/notice/create')) ? 'active': '' }}">
               <i class="nav-icon far fa-sticky-note text-success"></i>
               <p>
                   নোটিস
@@ -101,7 +101,7 @@
 
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link {{ (request()->is('admin/category') || request()->is('admin/category/create')) ? 'active': '' }}">
               <i class="fas fa-wave-square text-success nav-icon"></i>
               <p>
                  বাগান শ্রেনী
@@ -127,7 +127,7 @@
         
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link {{ (request()->is('admin/upozela') || request()->is('admin/upozela/create')) ? 'active': '' }}">
               <i class="fas fa-tags text-success nav-icon"></i>
               <p>
                  উপজেলা
@@ -152,7 +152,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link {{ (request()->is('admin/union') || request()->is('admin/union/create')) ? 'active': '' }}">
               <i class="nav-icon fas fa-copy text-success"></i>
               <p>
                   ইউনিয়ন
@@ -177,7 +177,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link {{ (request()->is('admin/lease') || request()->is('admin/lease/create')) ? 'active': '' }}">
               <i class="fas fa-paperclip nav-icon text-success"></i>
               <p>
                   লিজ ভূমি
@@ -203,7 +203,7 @@
 
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link {{ (request()->is('admin/user') || request()->is('admin/user/create')) ? 'active': '' }}">
               <i class="nav-icon fas fa-users text-success"></i>
               <p>
                  ব‌্যাবহারকারি
@@ -231,7 +231,7 @@
 
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link {{ (request()->is('admin/contact') || request()->is('admin/sms')) ? 'active': '' }}">
               <i class="fas fa-envelope-open-text text-success"></i>
               <p>
                 মেসেজ
@@ -257,7 +257,7 @@
 
     
           <li class="nav-item">
-            <a href="{{route('setting.create')}}" class="nav-link">
+            <a href="{{route('setting.create')}}" class="nav-link {{ ( request()->is('admin/setting/create')) ? 'active': '' }}">
               <i class="fas fa-tools nav-icon text-success"></i>
               <p>
                 

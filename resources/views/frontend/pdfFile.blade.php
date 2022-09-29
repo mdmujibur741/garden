@@ -61,6 +61,9 @@
 
             <div class="container-fluid">
                  <h4 class="title"> {{$notice->title}} </h4>
+                   <div style="text-align: right"> 
+                    <span style="padding: 1rem 1rem; font-size:1.5rem;"> Date: {{$notice->created_at->format('d.m.Y')}} </span>
+                   </div>
                      <p class="paragraph">
                         {!!$notice->description!!}
                       </p>
